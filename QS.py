@@ -16,6 +16,8 @@ def send_welcome(message):
     b5=types.KeyboardButton(f'You have {str(points)} points')
     answerb.add(b1,b2,b3,b4,b5)
     bot.send_message(message.chat.id,Qsts, reply_markup=answerb)
+
+
 @bot.message_handler(content_types=['text'])
 def send_welcome3(message):
     global Qsts,Ans,Trueans,points
